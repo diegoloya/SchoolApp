@@ -8,32 +8,31 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-    <EditText
-        android:id="@+id/etName"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:layout_width="400dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_centerHorizontal="true" />
+    <!--<EditText-->
+        <!--android:id="@+id/RegisterName"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Name"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_centerHorizontal="true" />-->
 
     <EditText
-        android:id="@+id/etUsername"
+        android:id="@+id/RegisterUsername"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
-        android:layout_below="@+id/etName"
         android:layout_width="400dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/RegisterPassword"
         android:ems="10"
         android:hint="Password"
-        android:layout_below="@+id/etUsername"
+        android:layout_below="@+id/RegisterUsername"
         android:inputType="textPassword"
         android:layout_width="400dp"
         android:layout_height="50dp"
@@ -45,7 +44,7 @@
     <Button
         android:id="@+id/bRegister"
         android:text="Register"
-        android:layout_below="@+id/etPassword"
+        android:layout_below="@+id/RegisterPassword"
         android:layout_width="400dp"
         android:layout_height="50dp"
         android:layout_marginTop="25dp"

@@ -59,4 +59,13 @@
         android:layout_below="@+id/textView3"
         android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:id="@+id/bSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:text="Sign Out" />
 </RelativeLayout>

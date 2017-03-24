@@ -1,5 +1,6 @@
 package com.example.diego.schoolapp;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button bLogin;
     private TextView registerLink;
 
+    private ProgressDialog progressDialog;
+
 
 
     @Override
@@ -34,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
+        progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
 
         username = (EditText) findViewById(R.id.etUsername);
@@ -82,12 +85,19 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this, "Fields are empty", Toast.LENGTH_LONG).show();
 
         } else {
-
+            progressDialog.setMessage("Signing in...");
+            progressDialog.show();
             mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (!task.isSuccessful()) {
                         Toast.makeText(LoginActivity.this, "Sign In Problem", Toast.LENGTH_LONG).show();
+                        progressDialog.cancel();
+                    }
+                    else {
+                        Toast.makeText(LoginActivity.this, "Sign In Successful", Toast.LENGTH_LONG).show();
+                        progressDialog.cancel();
+                        return;
                     }
                 }
             });
