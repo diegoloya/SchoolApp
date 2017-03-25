@@ -21,7 +21,7 @@
     <EditText
         android:id="@+id/RegisterUsername"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="textPersonName"
         android:layout_width="400dp"
         android:layout_height="50dp"

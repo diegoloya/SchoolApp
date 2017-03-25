@@ -7,6 +7,10 @@
   },
   "client": [
     {
+      "rules":{
+        ".read": true,
+        ".write": true
+      },
       "client_info": {
         "mobilesdk_app_id": "1:915876740181:android:5160bf49d5528c4c",
         "android_client_info": {
