@@ -8,6 +8,16 @@ import android.app.Application;
 
 public class FireApp extends Application {
 
+    private String globalTeacher;
+
+    public String globalTeacher() {
+        return globalTeacher;
+    }
+
+    public void globalTeacher(String str) {
+        globalTeacher = str;
+    }
+
     @Override
     public void onCreate(){
         super.onCreate();

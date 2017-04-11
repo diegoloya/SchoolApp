@@ -17,32 +17,36 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText etUsername;
     private EditText etPassword;
-//    private EditText etName;
+    private EditText etName;
+    private EditText etTeacher;
     private Button bRegister;
 
     private ProgressDialog progressDialog;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
+        databaseReference = FirebaseDatabase.getInstance().getReference();
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
-
+        etTeacher = (EditText) findViewById(R.id.RegisterTeacher);
+        etName = (EditText) findViewById(R.id.RegisterName);
         etUsername = (EditText) findViewById(R.id.RegisterUsername);
         etPassword = (EditText) findViewById(R.id.RegisterPassword);
-        //etName = (EditText) findViewById(R.id.RegisterName);
-
         bRegister = (Button) findViewById(R.id.bRegister);
 
 
@@ -60,6 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view){
                 registerUser();
             }
+
         });
     }
 
@@ -67,6 +72,20 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onStart(){
         super.onStart();
         mAuth.addAuthStateListener(mAuthListener);
+    }
+
+    private void saveUserInformation(){
+        String name = etName.getText().toString();
+        int points = 0;
+        String teacher = etTeacher.getText().toString();
+
+        StudentUser student = new StudentUser(name,teacher,points);
+        FirebaseUser user = mAuth.getCurrentUser();
+        databaseReference.child(teacher).child(user.getUid()).setValue(student);
+
+        Toast.makeText(this,"Information Saved...",Toast.LENGTH_LONG).show();
+
+
     }
 
     private void registerUser(){
@@ -86,7 +105,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(RegisterActivity.this, "Registered Successfully", Toast.LENGTH_LONG).show();
-
+                    saveUserInformation();
                 }
                 else {
                     Toast.makeText(RegisterActivity.this, "Problem with registration. Try again.", Toast.LENGTH_LONG).show();

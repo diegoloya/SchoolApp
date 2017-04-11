@@ -19,13 +19,34 @@
         <!--android:layout_centerHorizontal="true" />-->
 
     <EditText
+        android:id="@+id/RegisterTeacher"
+        android:ems="10"
+        android:hint="Teacher"
+        android:inputType="textPersonName"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/RegisterName"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/RegisterTeacher"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
         android:id="@+id/RegisterUsername"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
         android:layout_width="400dp"
+        android:layout_below="@+id/RegisterName"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -36,7 +57,7 @@
         android:inputType="textPassword"
         android:layout_width="400dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         tools:layout_editor_absoluteY="40dp"
         tools:layout_editor_absoluteX="5dp"/>

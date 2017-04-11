@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    android:background="#2C79DC" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp">
+
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/avatarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@+id/avatar"
+            android:text=""
+            android:textColor="#685398"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="40dp"
+            android:text=""
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/bBuy"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="$BUY$" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

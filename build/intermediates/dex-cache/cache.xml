@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e17489d766e747de4a97e66b3413d66616e6c654/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/bb1d76b6fb185d4eb14990c7d7cbad74577131cb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bc9abd45fc03a821ce2d5be3ddb2278f805a11e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/7d94573f090a0c18d8db585c9b0757bab03f816f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_52ccd980f5303f9ff21b68d142ab1dd20498fc43/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/19c2d1ed797a83f1990a1e5394b9b807b84ee99a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c2aea2e5d8bfddd2dbe65e391dfda764e655596c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/531406af41365e5fe1aa8b76acfff3961dba9b79/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0c1bed6725a6004595d241a1c0a1885b22dc7edb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/9a759ba8bab62a841505316f588401ff3368f111/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7858e0c8ed6d38c6c8715b5728474b69e5b2f9c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/a0594ef918849e73b6dccfe16e90edd3ce7cbfa2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0c3bcc641f35de3c2e95f91c09841025682fa02b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3684b9eb2283b134743bca9a522ea42b081411cc">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_bb745bb43ef29f7d60bbb672bf80f3edb2f250dd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/54b45aaa9498d88244f74979344d796951dac1f5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be54366b3bab459473e1d17928bd3c8b5e961725/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/179754d6bd095633f01e60e25b252d5ecb6a9c83/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_13cbf0defda1154c708c407ec22a508cd826bc1c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/2db6e02583b6b2a18a745f6beaf1274bfb13a0cf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_913031cdd073cdce45a35d3a5210ff09862ced4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/d7d70a87c6b2709b05d03895e478f8e74a7002e5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_383c530ebece5d301fd9136ab20deab294be68ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/bbf6c6ad72fd43a7054601af9c9de1409c547e9b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_af97125a6bb7665aea0a6c17f570d3532b4f768f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/diego/.android/build-cache/5d748aa5b4c1cb316e53094eb4ec9b3a9ad8d9f8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_100b784b4d31d99adbf2becd0ddcec9c1b841a05/classes.dex" />
+    </item>
+
+</items>
