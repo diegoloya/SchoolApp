@@ -1,5 +1,6 @@
 package com.example.diego.schoolapp;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 public class ShopActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
+    Context c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,6 @@ public class ShopActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
     }
+
 }

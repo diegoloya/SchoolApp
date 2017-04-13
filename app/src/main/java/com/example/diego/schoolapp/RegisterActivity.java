@@ -78,10 +78,11 @@ public class RegisterActivity extends AppCompatActivity {
         String name = etName.getText().toString();
         int points = 0;
         String teacher = etTeacher.getText().toString();
+        int imageID = 2130837614;
 
-        StudentUser student = new StudentUser(name,teacher,points);
+        StudentUser student = new StudentUser(name,teacher,points,imageID);
         FirebaseUser user = mAuth.getCurrentUser();
-        databaseReference.child(teacher).child(user.getUid()).setValue(student);
+        databaseReference.child(user.getUid()).setValue(student);
 
         Toast.makeText(this,"Information Saved...",Toast.LENGTH_LONG).show();
 

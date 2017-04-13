@@ -24,7 +24,7 @@ public class StudentUser {
     public String studentName;
     public String teacher;
     public int points;
-    ImageView avatar;
+    public int imageID;
 
     public StudentUser(){
     }
@@ -40,9 +40,10 @@ public class StudentUser {
 
 
 
-    public StudentUser(String name,String teacher,int points){
+    public StudentUser(String name,String teacher,int points, int imageID){
         this.studentName=name;
         this.teacher=teacher;
         this.points=points;
+        this.imageID=imageID;
     }
 }

@@ -40,12 +40,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
         app:srcCompat="@drawable/missing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:layout_toStartOf="@+id/bCheckIn" />
+
 
     <TextView
         android:id="@+id/editTextName"
@@ -78,17 +79,17 @@
         android:layout_alignLeft="@+id/editTextName"
         android:layout_alignStart="@+id/editTextName" />
 
-    <!--<TextView-->
-        <!--android:id="@+id/editTextTeacher"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="16dp"-->
-        <!--android:ems="10"-->
-        <!--android:textSize="20sp"-->
-        <!--android:hint="Teacher's Name"-->
-        <!--android:inputType="none"-->
-        <!--android:layout_alignLeft="@+id/editTextPoints"-->
-        <!--android:layout_alignStart="@+id/editTextPoints"-->
-        <!--android:layout_below="@+id/editTextPoints" />-->
+    <TextView
+        android:id="@+id/editTextTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Teacher's Name"
+        android:inputType="none"
+        android:layout_alignLeft="@+id/editTextPoints"
+        android:layout_alignStart="@+id/editTextPoints"
+        android:layout_below="@+id/editTextPoints" />
 
 </RelativeLayout>

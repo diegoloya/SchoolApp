@@ -12,6 +12,7 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
     ImageView avatar;
     Button buy;
 
+
     public RecyclerViewHolder(View itemView){
         super(itemView);
         buy = (Button) itemView.findViewById(R.id.bBuy);
