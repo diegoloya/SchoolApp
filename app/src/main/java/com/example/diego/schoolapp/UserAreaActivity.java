@@ -103,13 +103,11 @@ public class UserAreaActivity extends AppCompatActivity {
             }
         });
 
-
         shop.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(UserAreaActivity.this, ShopActivity.class));
             }
         });
-
 
         bSignOut = (Button) findViewById(R.id.bSignOut);
         mAuthListener = new FirebaseAuth.AuthStateListener(){
@@ -121,14 +119,22 @@ public class UserAreaActivity extends AppCompatActivity {
             }
         };
 
-
         bSignOut.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 signOut();
             }
         });
+
+        checkIn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(UserAreaActivity.this, CodeActivity.class));
+            }
+        });
     }
+
+
 
 
     private void signOut() {

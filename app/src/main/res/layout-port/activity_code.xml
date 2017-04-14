@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.williamwinters.qrtest2.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/EnterPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:text="Your teacher will have a code. "
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28" />
+
+    <EditText
+        android:id="@+id/code_info"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/camera_view"
+        android:hint="Point the phone at it or type it here!"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28" />
+
+    <SurfaceView
+        android:id="@+id/camera_view"
+        android:layout_width="265dp"
+        android:layout_height="216dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Got it!" />
+
+</LinearLayout>
+
+
+
+
+
