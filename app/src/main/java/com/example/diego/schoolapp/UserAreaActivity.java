@@ -18,6 +18,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import static android.view.View.INVISIBLE;
+
 
 public class UserAreaActivity extends AppCompatActivity {
     Button bSignOut;
@@ -107,6 +109,18 @@ public class UserAreaActivity extends AppCompatActivity {
         shop.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(UserAreaActivity.this, ShopActivity.class));
+            }
+        });
+
+        checkIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserAreaActivity.this, CodeActivity.class));
+//                checkIn.post(new Runnable() {
+//                    void run{
+//                        checkIn.setVisibility(INVISIBLE);
+//                    }
+//                });
             }
         });
 

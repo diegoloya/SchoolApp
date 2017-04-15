@@ -73,11 +73,12 @@
         android:inputType="none"
         android:textAlignment="center"
         android:textSize="60sp"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editTextName"
         android:layout_alignLeft="@+id/editTextName"
-        android:layout_alignStart="@+id/editTextName" />
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp" />
 
     <TextView
         android:id="@+id/editTextTeacher"
