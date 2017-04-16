@@ -5,91 +5,113 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.diego.schoolapp.UserAreaActivity"
+    android:background="@drawable/background2"
     tools:layout_editor_absoluteY="0dp"
     tools:layout_editor_absoluteX="0dp">
 
     <Button
         android:id="@+id/bSignOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="12dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Log Out" />
+        android:background="@drawable/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="530dp"
+        android:text="" />
 
     <Button
         android:id="@+id/bCheckIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check-in"
-        android:layout_above="@+id/bShop"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/attendance"
+        android:layout_marginTop="200dp"
+        android:text=""
+         />
+    <Button
+        android:id="@+id/bViewClass"
+        android:background="@drawable/students"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="200dp"
+        android:text=""
+        />
 
     <Button
         android:id="@+id/bShop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bSignOut"
-        android:layout_alignLeft="@+id/bCheckIn"
-        android:layout_alignStart="@+id/bCheckIn"
-        android:layout_marginBottom="60dp"
-        android:text="Shop" />
+        android:background="@drawable/shop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:text="" />
 
     <ImageView
         android:id="@+id/imageView"
         app:srcCompat="@drawable/missing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150sp"
+        android:layout_height="150dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
-        android:layout_toStartOf="@+id/bCheckIn" />
+         />
 
 
     <TextView
         android:id="@+id/editTextName"
-        android:layout_width="200sp"
+        android:layout_width="230sp"
+        android:layout_marginLeft="150dp"
+        android:layout_alignLeft="@id/imageView"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/bSignOut"
-        android:layout_alignRight="@+id/bSignOut"
         android:layout_alignTop="@+id/imageView"
-        android:ems="10"
+        android:layout_marginTop="20sp"
         android:hint="Student's Name"
         android:inputType="none"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textSize="35sp"
+
+        android:textSize="20sp"
         android:textStyle="bold|normal" />
 
     <TextView
-        android:id="@+id/editTextPoints"
-        android:layout_width="match_parent"
+        android:id="@+id/$"
+        android:layout_width="20dp"
+        android:layout_marginLeft="220dp"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:hint="$"
+        android:inputType="none"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/editTextPoints"
+        android:layout_width="230sp"
+        android:layout_marginLeft="150dp"
+        android:layout_alignLeft="@id/imageView"
+        android:layout_below="@id/editTextName"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:fontFamily="sans-serif"
         android:hint="Points"
-        android:inputType="none"
         android:textAlignment="center"
-        android:textSize="60sp"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/editTextName"
-        android:layout_alignStart="@+id/editTextName" />
+        android:inputType="none"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/editTextTeacher"
-        android:layout_width="match_parent"
+        android:layout_width="230sp"
+        android:layout_marginLeft="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_alignLeft="@id/imageView"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/editTextPoints"
         android:ems="10"
+        android:textAlignment="center"
         android:textSize="20sp"
         android:hint="Teacher's Name"
         android:inputType="none"
-        android:layout_alignLeft="@+id/editTextPoints"
-        android:layout_alignStart="@+id/editTextPoints"
-        android:layout_below="@+id/editTextPoints" />
+
+        />
 
 </RelativeLayout>

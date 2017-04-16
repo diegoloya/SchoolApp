@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ public class UserAreaActivity extends AppCompatActivity {
     Button bSignOut;
     Button checkIn;
     Button shop;
+    Button viewClass;
     TextView userName;
     TextView points;
     ImageView avatar;
@@ -30,23 +32,22 @@ public class UserAreaActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private DatabaseReference mDatabase;
-    private DatabaseReference temp;
-    
+    private String teacherRef;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_area);
         mAuth = FirebaseAuth.getInstance();
         checkIn = (Button) findViewById(R.id.bCheckIn);
+
         shop = (Button) findViewById(R.id.bShop);
+        viewClass = (Button) findViewById(R.id.bViewClass);
+
         userName = (TextView) findViewById(R.id.editTextName);
         points = (TextView) findViewById(R.id.editTextPoints);
         avatar = (ImageView) findViewById(R.id.imageView);
         teacherName = (TextView) findViewById(R.id.editTextTeacher);
-
-
-        //((ImageView)findViewById(R.id.avatar)).setImageResource(R.drawable.ironman);
-//        avatar.setImageResource(R.drawable.ironman);
 
 
 
@@ -81,6 +82,7 @@ public class UserAreaActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String teacher = dataSnapshot.getValue(String.class);
+                teacherRef=teacher;
                 teacherName.setText(teacher);
             }
 
@@ -103,10 +105,34 @@ public class UserAreaActivity extends AppCompatActivity {
             }
         });
 
-
+//        checkIn.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                startActivity(new Intent(UserAreaActivity.this, CheckInActivity.class));
+//            }
+//        });
         shop.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(UserAreaActivity.this, ShopActivity.class));
+            }
+        });
+        viewClass.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //startActivity(new Intent(UserAreaActivity.this, ViewClassActivity.class));
+                Intent i = new Intent(UserAreaActivity.this, ViewClassActivity.class);
+                String getrec=teacherRef;
+                Toast.makeText(UserAreaActivity.this, ""+teacherRef, Toast.LENGTH_SHORT).show();
+
+//Create the bundle
+                Bundle bundle = new Bundle();
+
+//Add your data to bundle
+                bundle.putString("stuff", getrec);
+
+//Add the bundle to the intent
+                i.putExtras(bundle);
+
+//Fire that second activity
+                startActivity(i);
             }
         });
 

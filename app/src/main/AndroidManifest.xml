@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserAreaActivity" />
-        <activity android:name=".ShopActivity"></activity>
-    </application>
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".ViewClassActivity"/>
+</application>
 
 </manifest>

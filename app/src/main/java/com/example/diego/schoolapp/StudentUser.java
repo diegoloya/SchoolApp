@@ -29,15 +29,6 @@ public class StudentUser {
     public StudentUser(){
     }
 
-//    public void updateStudentAvatar(int position){
-//        //Toast.makeText(this, "IM IN HERE " +position , Toast.LENGTH_SHORT).show();
-//        avatar.setImageResource(R.drawable.ironman);
-//        FirebaseUser user = mAuth.getCurrentUser();
-//        DatabaseReference databaseReference;
-//        databaseReference = FirebaseDatabase.getInstance().getReference();
-//        databaseReference.child(teacher).child(user.getUid()).setValue("Image");
-//    }
-
 
 
     public StudentUser(String name,String teacher,int points, int imageID){

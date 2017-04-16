@@ -78,7 +78,9 @@ public class RegisterActivity extends AppCompatActivity {
         String name = etName.getText().toString();
         int points = 0;
         String teacher = etTeacher.getText().toString();
-        int imageID = 2130837614;
+        //int imageID = 2130837617;
+        int imageID=(R.drawable.missing);
+
 
         StudentUser student = new StudentUser(name,teacher,points,imageID);
         FirebaseUser user = mAuth.getCurrentUser();

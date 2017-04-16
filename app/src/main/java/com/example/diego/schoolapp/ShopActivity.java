@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 public class ShopActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    Context c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
