@@ -105,11 +105,11 @@ public class UserAreaActivity extends AppCompatActivity {
             }
         });
 
-//        checkIn.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                startActivity(new Intent(UserAreaActivity.this, CheckInActivity.class));
-//            }
-//        });
+        checkIn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(UserAreaActivity.this, CodeActivity.class));
+            }
+        });
         shop.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(UserAreaActivity.this, ShopActivity.class));

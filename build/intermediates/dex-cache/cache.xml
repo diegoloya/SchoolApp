@@ -165,11 +165,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/diego/.android/build-cache/4d165ce0399c8d4e7fa86ae99e35d3f9dc03188d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e684205744f814a73b7752545e0661330415c9e">
+        <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_40544aadb99c89eb1fe02ff44eeb31555dc20343/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a146b534cdc49e1dfa0eb0764a8059e783c544b8">
+        sha1="662d5665fbde53f622cd42ca99f1de2c67ffbed2">
         <dex dex="/Users/diego/Desktop/SchoolApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_bb745bb43ef29f7d60bbb672bf80f3edb2f250dd/classes.dex" />
     </item>
     <item
